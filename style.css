@@ -1,0 +1,82 @@
+
+body {
+    background: #c4c4c4;
+}
+
+div.content {
+    position: absolute;
+    display: flex;
+    flex-flow: wrap row;
+    align-content: flex-start;
+}
+
+div.content div.note {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.note {
+    padding-top: 20px;
+    background: rgba(243, 234, 21, 0.99);
+    min-height: 100px;
+    min-width: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);;
+}
+
+.note .title-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    background: #d2b211;
+    width: 97%;
+}
+
+.note #text-content {
+    padding: 10px 10px;
+    box-sizing: border-box;
+    min-height: 97px;
+    min-width: 100px;
+    background: transparent;
+    border: none;
+}
+
+.note .title-bar:hover {
+    cursor: move;
+    background: #d2b211;
+}
+.newNote {
+    margin-left: 45%;
+    background: #d2b211;
+    font-size: 20px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.44);
+    background: rgba(208, 208, 208, 0.47);
+    border: none;
+}
+
+.newNote:hover {
+    background: #116897;
+}
+
+.deleteNote {
+    border: none;
+    position: absolute;
+    top: 2px;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+
+.deleteNote {
+    border-radius: 50%;
+    right: 5px;
+    background: #ff0000;
+}
+
